@@ -1,0 +1,33 @@
+/* Change these three blue values to recolor every component. */
+:root {
+  color-scheme: dark;
+  --blue-accent: #4f8cff;
+  --color-primary-dark: #08162e;
+  --color-primary-light: #bcd7ff;
+  --color-primary: var(--blue-accent);
+
+  --color-ink: #f1f4fa;
+  --color-muted: #9ba9be;
+  --color-surface: color-mix(in srgb, var(--color-primary-dark) 88%, #ffffff);
+  --color-background: color-mix(in srgb, var(--color-primary-dark) 75%, #000000);
+  --color-border: color-mix(in srgb, var(--color-primary-light) 15%, transparent);
+  --color-on-primary: var(--color-primary-dark);
+  --color-emphasis: var(--color-primary-light);
+  --color-panel: var(--color-primary-dark);
+  --font-sans: 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif;
+  --container-width: 1220px;
+  --radius: 16px;
+}
+
+:root[data-theme='light'] {
+  color-scheme: light;
+  --color-primary: color-mix(in srgb, var(--blue-accent) 70%, var(--color-primary-dark));
+  --color-on-primary: #ffffff;
+  --color-ink: #17233a;
+  --color-muted: #53617a;
+  --color-surface: #ffffff;
+  --color-background: #f8faff;
+  --color-border: color-mix(in srgb, var(--color-primary-dark) 16%, transparent);
+  --color-emphasis: var(--color-primary-dark);
+  --color-panel: color-mix(in srgb, var(--color-primary-light) 35%, #ffffff);
+}
